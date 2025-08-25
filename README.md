@@ -46,32 +46,13 @@ This system predicts health insurance premiums using advanced machine learning t
 
 ## Usage
 ```bash
-python main.py
+python train_model.py
 ```
 
-## Project Structure
+```bash
+streamlit run app.py
 ```
-insurance_prediction/
-├── backend/          # Core processing modules
-│   ├── data_processing.py
-│   ├── feature_engineering.py
-│   └── model_training.py
-├── config/           # Configuration settings
-│   ├── config.py
-│   └── paths.py
-├── data/             # Data storage
-│   └── raw/
-├── models/           # Trained models
-├── reports/          # Performance reports and graphs
-├── src/              # Source utilities
-│   └── utils/
-│       ├── helpers.py
-│       └── logger.py
-├── .env              # Environment variables
-├── main.py           # Application entry point
-├── README.md         # Project documentation
-└── requirements.txt  # Dependency list
-```
+
 
 ## Reports
 Generated reports in `reports/` directory:
@@ -81,4 +62,5 @@ Generated reports in `reports/` directory:
 - `training.log`: Detailed training process logs
 
 ## License
+
 MIT License
