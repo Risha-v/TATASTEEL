@@ -1,0 +1,24 @@
+# Core Data Science
+pandas
+numpy
+scikit-learn
+scipy
+
+# Machine Learning Frameworks
+xgboost
+lightgbm
+catboost
+
+# Visualization
+matplotlib
+seaborn
+plotly
+
+# Web Interface
+streamlit
+
+# Utilities
+python-dotenv
+joblib
+tqdm
+

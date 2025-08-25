@@ -1,0 +1,374 @@
+2025-08-25 01:18:22 - src.data_processing.data_loader - INFO - Dataset loaded successfully with shape (1338, 7)
+2025-08-25 01:18:22 - src.data_processing.data_loader - INFO - Regional charge factors calculated
+2025-08-25 01:18:22 - src.data_processing.data_loader - INFO - Regional factors: {'northeast': 1.0102455105442796, 'northwest': 0.935733251426951, 'southeast': 1.1103950683104384, 'southwest': 0.9304102861689068}
+2025-08-25 01:18:22 - src.data_processing.data_cleaner - INFO - Handled outliers in charges and BMI
+2025-08-25 01:18:22 - src.data_processing.data_cleaner - INFO - Removed 43 records with unrealistic values
+2025-08-25 01:18:22 - src.data_processing.data_cleaner - INFO - Data cleaned. Original size: 1338, Cleaned size: 1295
+2025-08-25 01:18:22 - src.data_processing.data_preprocessor - INFO - Preprocessor created successfully
+2025-08-25 01:18:22 - src.model.trainer - INFO - Starting model training and evaluation...
+2025-08-25 01:18:22 - src.model.trainer - INFO - Training RandomForest...
+2025-08-25 01:18:29 - src.model.trainer - INFO - RandomForest - Test R2: 0.8003
+2025-08-25 01:18:29 - src.model.trainer - INFO - Training XGBoost...
+2025-08-25 01:18:29 - src.model.trainer - INFO - XGBoost - Test R2: 0.7920
+2025-08-25 01:18:29 - src.model.trainer - INFO - Training LightGBM...
+2025-08-25 01:18:37 - src.model.trainer - INFO - LightGBM - Test R2: 0.8089
+2025-08-25 01:18:37 - src.model.trainer - INFO - Training CatBoost...
+2025-08-25 01:18:38 - src.model.trainer - INFO - CatBoost - Test R2: nan
+2025-08-25 01:18:38 - src.model.trainer - INFO - Training DecisionTree...
+2025-08-25 01:18:38 - src.model.trainer - INFO - DecisionTree - Test R2: 0.7322
+2025-08-25 01:18:40 - src.model.trainer - INFO - Stored 8 feature names
+2025-08-25 01:18:40 - src.model.trainer - INFO - Selected best model: LightGBM
+2025-08-25 01:18:40 - src.model.trainer - INFO - Best model R2 score: 0.8089
+2025-08-25 01:18:40 - src.model.trainer - INFO - Model performance metrics saved
+2025-08-25 01:18:42 - src.model.trainer - INFO - Feature importance plot generated
+2025-08-25 01:18:43 - src.model.trainer - INFO - Model comparison plot generated
+2025-08-25 01:18:43 - src.model.trainer - INFO - Reports generated in reports/
+2025-08-25 01:18:43 - src.model.trainer - INFO - Model saved to models/insurance_model.pkl
+2025-08-25 01:18:43 - src.model.trainer - INFO - Model type: LightGBM
+2025-08-25 01:18:43 - src.model.trainer - INFO - Model R2 score: 0.8089
+2025-08-25 01:18:43 - src.model.predictor - INFO - LightGBM model loaded successfully
+2025-08-25 01:19:49 - src.model.predictor - INFO - Prediction made: $18208.02 for input: {'age': 18, 'sex': 'male', 'bmi': 25.0, 'children': 3, 'smoker': 'yes', 'region': 'northeast'}
+2025-08-25 01:23:33 - src.model.predictor - INFO - LightGBM model loaded successfully
+2025-08-25 01:27:31 - src.data_processing.data_loader - INFO - Dataset loaded successfully with shape (1338, 7)
+2025-08-25 01:27:31 - src.data_processing.data_loader - INFO - Regional charge factors calculated
+2025-08-25 01:27:31 - src.data_processing.data_loader - INFO - Regional factors: {'northeast': 1.0102455105442796, 'northwest': 0.935733251426951, 'southeast': 1.1103950683104384, 'southwest': 0.9304102861689068}
+2025-08-25 01:27:31 - src.data_processing.data_cleaner - INFO - Handled outliers in charges and BMI
+2025-08-25 01:27:31 - src.data_processing.data_cleaner - INFO - Removed 43 records with unrealistic values
+2025-08-25 01:27:31 - src.data_processing.data_cleaner - INFO - Data cleaned. Original size: 1338, Cleaned size: 1295
+2025-08-25 01:27:31 - src.data_processing.data_preprocessor - INFO - Preprocessor created successfully
+2025-08-25 01:27:31 - src.model.trainer - INFO - Starting model training and evaluation...
+2025-08-25 01:27:31 - src.model.trainer - INFO - Training RandomForest...
+2025-08-25 01:27:37 - src.model.trainer - INFO - RandomForest - Test R2: 0.8003
+2025-08-25 01:27:37 - src.model.trainer - INFO - Training XGBoost...
+2025-08-25 01:27:37 - src.model.trainer - INFO - XGBoost - Test R2: 0.7920
+2025-08-25 01:27:37 - src.model.trainer - INFO - Training LightGBM...
+2025-08-25 01:27:42 - src.model.trainer - INFO - LightGBM - Test R2: 0.8089
+2025-08-25 01:27:42 - src.model.trainer - INFO - Training CatBoost...
+2025-08-25 01:27:43 - src.model.trainer - INFO - CatBoost - Test R2: 0.8203
+2025-08-25 01:27:43 - src.model.trainer - INFO - Training DecisionTree...
+2025-08-25 01:27:43 - src.model.trainer - INFO - DecisionTree - Test R2: 0.7322
+2025-08-25 01:27:44 - src.model.trainer - INFO - Stored 8 feature names
+2025-08-25 01:27:44 - src.model.trainer - INFO - Selected best model: CatBoost
+2025-08-25 01:27:44 - src.model.trainer - INFO - Best model R2 score: 0.8203
+2025-08-25 01:27:44 - src.model.trainer - INFO - Cleaned up CatBoost temporary files
+2025-08-25 01:27:44 - src.model.trainer - INFO - Model performance metrics saved
+2025-08-25 01:27:45 - src.model.trainer - INFO - Feature importance plot generated
+2025-08-25 01:27:46 - src.model.trainer - INFO - Model comparison plot generated
+2025-08-25 01:27:46 - src.model.trainer - INFO - Reports generated in reports/
+2025-08-25 01:27:46 - src.model.trainer - INFO - Model saved to models/insurance_model.pkl
+2025-08-25 01:27:46 - src.model.trainer - INFO - Model type: CatBoost
+2025-08-25 01:27:46 - src.model.trainer - INFO - Model R2 score: 0.8203
+2025-08-25 01:27:46 - src.model.predictor - INFO - CatBoost model loaded successfully
+2025-08-25 01:28:12 - src.model.predictor - INFO - Prediction made: $19205.54 for input: {'age': 23, 'sex': 'male', 'bmi': 24.0, 'children': 3, 'smoker': 'yes', 'region': 'northeast'}
+2025-08-25 01:28:28 - src.model.predictor - INFO - CatBoost model loaded successfully
+2025-08-25 01:29:30 - src.model.predictor - INFO - CatBoost model loaded successfully
+2025-08-25 01:29:37 - src.model.predictor - INFO - CatBoost model loaded successfully
+2025-08-25 01:29:40 - src.model.predictor - INFO - CatBoost model loaded successfully
+2025-08-25 01:29:40 - src.model.predictor - INFO - CatBoost model loaded successfully
+2025-08-25 01:29:40 - src.model.predictor - INFO - CatBoost model loaded successfully
+2025-08-25 01:29:47 - src.model.predictor - INFO - CatBoost model loaded successfully
+2025-08-25 01:29:48 - src.model.predictor - INFO - CatBoost model loaded successfully
+2025-08-25 01:29:48 - src.model.predictor - INFO - Prediction made: $18177.15 for input: {'age': 30, 'sex': 'male', 'bmi': 25.0, 'children': 3, 'smoker': 'yes', 'region': 'southwest'}
+2025-08-25 17:25:13 - src.data.loader - INFO - Dataset loaded successfully with shape (1338, 7)
+2025-08-25 17:25:13 - src.data.loader - INFO - Regional charge factors calculated
+2025-08-25 17:25:13 - src.data.loader - INFO - Regional factors: {'northeast': 1.0102455105442796, 'northwest': 0.935733251426951, 'southeast': 1.1103950683104384, 'southwest': 0.9304102861689068}
+2025-08-25 17:25:13 - src.data.cleaner - INFO - Handled outliers in charges and BMI
+2025-08-25 17:25:13 - src.data.cleaner - INFO - Data cleaned. Original size: 1338, Cleaned size: 1338
+2025-08-25 17:25:13 - src.data.preprocessor - INFO - Preprocessor created successfully
+2025-08-25 17:25:13 - src.models.trainer - INFO - Starting model training and evaluation...
+2025-08-25 17:25:13 - src.models.trainer - INFO - Training RandomForest...
+2025-08-25 17:25:24 - src.models.trainer - INFO - RandomForest - Test R2: 0.7942
+2025-08-25 17:25:24 - src.models.trainer - INFO - Training XGBoost...
+2025-08-25 17:25:29 - src.models.trainer - INFO - XGBoost - Test R2: 0.7565
+2025-08-25 17:25:29 - src.models.trainer - INFO - Training LightGBM...
+2025-08-25 17:25:37 - src.models.trainer - INFO - LightGBM - Test R2: 0.7666
+2025-08-25 17:25:37 - src.models.trainer - INFO - Training CatBoost...
+2025-08-25 17:25:50 - src.models.trainer - INFO - CatBoost - Test R2: 0.7752
+2025-08-25 17:25:50 - src.models.trainer - INFO - Training GradientBoosting...
+2025-08-25 17:25:56 - src.models.trainer - INFO - GradientBoosting - Test R2: 0.7595
+2025-08-25 17:25:56 - src.models.trainer - INFO - Training DecisionTree...
+2025-08-25 17:25:56 - src.models.trainer - INFO - DecisionTree - Test R2: 0.6065
+2025-08-25 17:25:57 - src.models.trainer - INFO - Stored 8 feature names
+2025-08-25 17:25:57 - src.models.trainer - INFO - Selected best model: RandomForest
+2025-08-25 17:25:57 - src.models.trainer - INFO - Best model R2 score: 0.7942
+2025-08-25 17:25:57 - src.models.trainer - INFO - Cleaned up CatBoost temporary files
+2025-08-25 17:25:57 - src.models.trainer - INFO - Model performance metrics saved
+2025-08-25 17:26:00 - src.models.trainer - INFO - Feature importance plot generated
+2025-08-25 17:26:01 - src.models.trainer - INFO - Model comparison plot generated
+2025-08-25 17:26:01 - src.models.trainer - INFO - Reports generated in reports/
+2025-08-25 17:26:01 - src.models.trainer - INFO - Model saved to models/insurance_model.pkl
+2025-08-25 17:26:01 - src.models.trainer - INFO - Model type: RandomForest
+2025-08-25 17:26:01 - src.models.trainer - INFO - Model R2 score: 0.7942
+2025-08-25 17:26:01 - src.models.predictor - ERROR - Error loading model: name 'os' is not defined
+2025-08-25 17:29:40 - src.models.predictor - INFO - RandomForest model loaded successfully
+2025-08-25 17:30:07 - src.data.loader - INFO - Dataset loaded successfully with shape (1338, 7)
+2025-08-25 17:30:07 - src.data.loader - INFO - Regional charge factors calculated
+2025-08-25 17:30:07 - src.data.loader - INFO - Regional factors: {'northeast': 1.0102455105442796, 'northwest': 0.935733251426951, 'southeast': 1.1103950683104384, 'southwest': 0.9304102861689068}
+2025-08-25 17:30:07 - src.data.cleaner - INFO - Handled outliers in charges and BMI
+2025-08-25 17:30:07 - src.data.cleaner - INFO - Data cleaned. Original size: 1338, Cleaned size: 1338
+2025-08-25 17:30:07 - src.data.preprocessor - INFO - Preprocessor created successfully
+2025-08-25 17:30:07 - src.models.trainer - INFO - Starting model training and evaluation...
+2025-08-25 17:30:07 - src.models.trainer - INFO - Training RandomForest...
+2025-08-25 17:30:18 - src.models.trainer - INFO - RandomForest - Test R2: 0.7942
+2025-08-25 17:30:18 - src.models.trainer - INFO - Training XGBoost...
+2025-08-25 17:30:23 - src.models.trainer - INFO - XGBoost - Test R2: 0.7565
+2025-08-25 17:30:23 - src.models.trainer - INFO - Training LightGBM...
+2025-08-25 17:30:31 - src.models.trainer - INFO - LightGBM - Test R2: 0.7666
+2025-08-25 17:30:31 - src.models.trainer - INFO - Training CatBoost...
+2025-08-25 17:30:43 - src.models.trainer - INFO - CatBoost - Test R2: 0.7752
+2025-08-25 17:30:43 - src.models.trainer - INFO - Training GradientBoosting...
+2025-08-25 17:30:49 - src.models.trainer - INFO - GradientBoosting - Test R2: 0.7595
+2025-08-25 17:30:49 - src.models.trainer - INFO - Training DecisionTree...
+2025-08-25 17:30:49 - src.models.trainer - INFO - DecisionTree - Test R2: 0.6065
+2025-08-25 17:30:50 - src.models.trainer - INFO - Stored 8 feature names
+2025-08-25 17:30:50 - src.models.trainer - INFO - Selected best model: RandomForest
+2025-08-25 17:30:50 - src.models.trainer - INFO - Best model R2 score: 0.7942
+2025-08-25 17:30:50 - src.models.trainer - INFO - Cleaned up CatBoost temporary files
+2025-08-25 17:30:50 - src.models.trainer - INFO - Model performance metrics saved
+2025-08-25 17:30:51 - src.models.trainer - INFO - Feature importance plot generated
+2025-08-25 17:30:52 - src.models.trainer - INFO - Model comparison plot generated
+2025-08-25 17:30:52 - src.models.trainer - INFO - Reports generated in reports/
+2025-08-25 17:30:53 - src.models.trainer - INFO - Model saved to models/insurance_model.pkl
+2025-08-25 17:30:53 - src.models.trainer - INFO - Model type: RandomForest
+2025-08-25 17:30:53 - src.models.trainer - INFO - Model R2 score: 0.7942
+2025-08-25 17:30:53 - src.models.predictor - INFO - RandomForest model loaded successfully
+2025-08-25 17:32:28 - src.models.predictor - INFO - RandomForest model loaded successfully
+2025-08-25 17:32:28 - src.models.predictor - INFO - Prediction made: $4760.35 for input: {'age': 30, 'sex': 'male', 'bmi': 25.0, 'children': 0, 'smoker': 'no', 'region': 'northeast'}
+2025-08-25 17:42:33 - src.data.loader - INFO - Dataset loaded successfully with shape (1338, 7)
+2025-08-25 17:42:33 - src.data.loader - INFO - Regional charge factors calculated
+2025-08-25 17:42:33 - src.data.loader - INFO - Regional factors: {'northeast': 1.0102455105442796, 'northwest': 0.935733251426951, 'southeast': 1.1103950683104384, 'southwest': 0.9304102861689068}
+2025-08-25 17:42:33 - src.data.cleaner - INFO - Handled outliers in charges and BMI
+2025-08-25 17:42:33 - src.data.cleaner - INFO - Data cleaned. Original size: 1338, Cleaned size: 1338
+2025-08-25 17:42:33 - src.data.preprocessor - INFO - Preprocessor created successfully
+2025-08-25 17:42:33 - src.models.trainer - INFO - Starting model training and evaluation...
+2025-08-25 17:42:33 - src.models.trainer - INFO - Training RandomForest...
+2025-08-25 17:42:44 - src.models.trainer - INFO - RandomForest - Test R2: 0.7942
+2025-08-25 17:42:44 - src.models.trainer - INFO - Training XGBoost...
+2025-08-25 17:42:49 - src.models.trainer - INFO - XGBoost - Test R2: 0.7565
+2025-08-25 17:42:49 - src.models.trainer - INFO - Training LightGBM...
+2025-08-25 17:42:57 - src.models.trainer - INFO - LightGBM - Test R2: 0.7666
+2025-08-25 17:42:57 - src.models.trainer - INFO - Training CatBoost...
+2025-08-25 17:43:11 - src.models.trainer - INFO - CatBoost - Test R2: 0.7752
+2025-08-25 17:43:11 - src.models.trainer - INFO - Training DecisionTree...
+2025-08-25 17:43:11 - src.models.trainer - INFO - DecisionTree - Test R2: 0.6065
+2025-08-25 17:43:13 - src.models.trainer - INFO - Stored 8 feature names
+2025-08-25 17:43:13 - src.models.trainer - INFO - Selected best model: RandomForest
+2025-08-25 17:43:13 - src.models.trainer - INFO - Best model R2 score: 0.7942
+2025-08-25 17:43:13 - src.models.trainer - INFO - Cleaned up CatBoost temporary files
+2025-08-25 17:43:13 - src.models.trainer - INFO - Model performance metrics saved
+2025-08-25 17:43:14 - src.models.trainer - INFO - Feature importance plot generated
+2025-08-25 17:43:15 - src.models.trainer - INFO - Model comparison plot generated
+2025-08-25 17:43:15 - src.models.trainer - INFO - Reports generated in reports/
+2025-08-25 17:43:15 - src.models.trainer - INFO - Model saved to models/insurance_model.pkl
+2025-08-25 17:43:15 - src.models.trainer - INFO - Model type: RandomForest
+2025-08-25 17:43:15 - src.models.trainer - INFO - Model R2 score: 0.7942
+2025-08-25 17:50:36 - src.data.loader - INFO - Dataset loaded successfully with shape (1338, 7)
+2025-08-25 17:50:36 - src.data.loader - INFO - Regional charge factors calculated
+2025-08-25 17:50:36 - src.data.loader - INFO - Regional factors: {'northeast': 1.0102455105442796, 'northwest': 0.935733251426951, 'southeast': 1.1103950683104384, 'southwest': 0.9304102861689068}
+2025-08-25 17:50:36 - src.data.cleaner - INFO - Handled outliers in charges and BMI
+2025-08-25 17:50:36 - src.data.cleaner - INFO - Data cleaned. Original size: 1338, Cleaned size: 1338
+2025-08-25 17:50:36 - src.data.preprocessor - INFO - Preprocessor created successfully
+2025-08-25 17:50:36 - src.models.trainer - INFO - Starting model training and evaluation...
+2025-08-25 17:50:36 - src.models.trainer - INFO - Generated 8 feature names
+2025-08-25 17:50:36 - src.models.trainer - INFO - Training RandomForest...
+2025-08-25 17:50:43 - src.models.trainer - INFO - RandomForest - Test R2: 0.7958
+2025-08-25 17:50:43 - src.models.trainer - INFO - Training XGBoost...
+2025-08-25 17:50:44 - src.models.trainer - INFO - XGBoost - Test R2: 0.7652
+2025-08-25 17:50:44 - src.models.trainer - INFO - Training LightGBM...
+2025-08-25 17:50:50 - src.models.trainer - INFO - LightGBM - Test R2: 0.7656
+2025-08-25 17:50:50 - src.models.trainer - INFO - Training CatBoost...
+2025-08-25 17:50:50 - src.models.trainer - ERROR - Error training models: 
+All the 5 fits failed.
+It is very likely that your model is misconfigured.
+You can try to debug the error by setting error_score='raise'.
+
+Below are more details about the failures:
+--------------------------------------------------------------------------------
+5 fits failed with the following error:
+Traceback (most recent call last):
+  File "E:\model2\tata\Lib\site-packages\sklearn\model_selection\_validation.py", line 859, in _fit_and_score
+    estimator.fit(X_train, y_train, **fit_params)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\model2\tata\Lib\site-packages\catboost\core.py", line 5870, in fit
+    _process_synonyms(params)
+    ~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "E:\model2\tata\Lib\site-packages\catboost\core.py", line 1618, in _process_synonyms
+    _process_synonyms_groups(params)
+    ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "E:\model2\tata\Lib\site-packages\catboost\core.py", line 1576, in _process_synonyms_groups
+    _process_synonyms_group(['l2_leaf_reg', 'reg_lambda'], params)
+    ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "E:\model2\tata\Lib\site-packages\catboost\core.py", line 1562, in _process_synonyms_group
+    raise CatBoostError('only one of the parameters ' + (', '.join(synonyms)) + ' should be initialized.')
+_catboost.CatBoostError: only one of the parameters l2_leaf_reg, reg_lambda should be initialized.
+
+2025-08-25 17:50:50 - src.models.trainer - INFO - Cleaned up CatBoost temporary files
+2025-08-25 22:38:53 - src.data.loader - INFO - Dataset loaded successfully with shape (1338, 7)
+2025-08-25 22:38:54 - src.data.loader - INFO - Regional charge factors calculated
+2025-08-25 22:38:54 - src.data.loader - INFO - Regional factors: {'northeast': 1.0102455105442796, 'northwest': 0.935733251426951, 'southeast': 1.1103950683104384, 'southwest': 0.9304102861689068}
+2025-08-25 22:38:54 - src.data.cleaner - INFO - Handled outliers in charges and BMI
+2025-08-25 22:38:54 - src.data.cleaner - INFO - Data cleaned. Original size: 1338, Cleaned size: 1338
+2025-08-25 22:38:54 - src.data.preprocessor - INFO - Preprocessor created successfully
+2025-08-25 22:38:54 - src.models.trainer - INFO - Starting model training and evaluation...
+2025-08-25 22:38:54 - src.models.trainer - INFO - Generated 8 feature names
+2025-08-25 22:38:54 - src.models.trainer - INFO - Training RandomForest...
+2025-08-25 22:38:59 - src.models.trainer - INFO - Training XGBoost...
+2025-08-25 22:39:01 - src.models.trainer - INFO - Training LightGBM...
+2025-08-25 22:39:10 - src.models.trainer - INFO - Training CatBoost...
+2025-08-25 22:39:10 - src.models.trainer - INFO - Training DecisionTree...
+2025-08-25 22:39:11 - src.models.trainer - INFO - Cleaned up CatBoost temporary files
+2025-08-25 22:39:11 - src.models.trainer - INFO - Model performance metrics saved
+2025-08-25 22:39:13 - src.models.trainer - INFO - Model comparison plot generated
+2025-08-25 22:39:13 - src.models.trainer - INFO - Reports generated in reports/
+2025-08-25 22:39:13 - src.models.trainer - INFO - Model saved to models/insurance_model.pkl
+2025-08-25 22:49:55 - src.data.loader - INFO - Dataset loaded successfully with shape (1338, 7)
+2025-08-25 22:49:55 - src.data.loader - INFO - Regional charge factors calculated
+2025-08-25 22:49:55 - src.data.loader - INFO - Regional factors: {'northeast': 1.0102455105442796, 'northwest': 0.935733251426951, 'southeast': 1.1103950683104384, 'southwest': 0.9304102861689068}
+2025-08-25 22:49:55 - src.data.cleaner - INFO - Handled outliers in charges and BMI
+2025-08-25 22:49:55 - src.data.cleaner - INFO - Data cleaned. Original size: 1338, Cleaned size: 1338
+2025-08-25 22:49:55 - src.data.preprocessor - INFO - Preprocessor created successfully
+2025-08-25 22:49:55 - src.models.trainer - INFO - Starting model training and evaluation...
+2025-08-25 22:49:55 - src.models.trainer - INFO - Generated 8 feature names
+2025-08-25 22:49:55 - src.models.trainer - INFO - Training RandomForest...
+2025-08-25 22:50:00 - src.models.trainer - INFO - SUCCESS RandomForest - Test R2: 0.7957
+2025-08-25 22:50:00 - src.models.trainer - INFO - Training XGBoost...
+2025-08-25 22:50:02 - src.models.trainer - INFO - SUCCESS XGBoost - Test R2: 0.7625
+2025-08-25 22:50:02 - src.models.trainer - INFO - Training LightGBM...
+2025-08-25 22:50:08 - src.models.trainer - INFO - SUCCESS LightGBM - Test R2: 0.7591
+2025-08-25 22:50:08 - src.models.trainer - INFO - Training CatBoost...
+2025-08-25 22:50:08 - src.models.trainer - ERROR - FAILED CatBoost: catboost/private/libs/options/bootstrap_options.cpp:16: Error: bayesian bootstrap doesn't support 'subsample' option
+2025-08-25 22:50:08 - src.models.trainer - INFO - Training DecisionTree...
+2025-08-25 22:50:08 - src.models.trainer - INFO - SUCCESS DecisionTree - Test R2: 0.7693
+2025-08-25 22:50:09 - src.models.trainer - INFO - WINNER Selected best model: RandomForest
+2025-08-25 22:50:09 - src.models.trainer - INFO - SCORE Best model R2 score: 0.7957
+2025-08-25 22:50:09 - src.models.trainer - INFO - Cleaned up CatBoost temporary files
+2025-08-25 22:50:09 - src.models.trainer - INFO - Model performance metrics saved
+2025-08-25 22:50:10 - src.models.trainer - INFO - Model comparison plot generated
+2025-08-25 22:50:10 - src.models.trainer - INFO - Reports generated in reports/
+2025-08-25 22:50:11 - src.models.trainer - INFO - Model saved to models/insurance_model.pkl
+2025-08-25 22:50:11 - src.models.trainer - INFO - WINNER Model type: RandomForest
+2025-08-25 22:50:11 - src.models.trainer - INFO - SCORE Model R2 score: 0.7957
+2025-08-25 22:50:37 - src.data.loader - INFO - Dataset loaded successfully with shape (1338, 7)
+2025-08-25 22:50:37 - src.data.loader - INFO - Regional charge factors calculated
+2025-08-25 22:50:37 - src.data.loader - INFO - Regional factors: {'northeast': 1.0102455105442796, 'northwest': 0.935733251426951, 'southeast': 1.1103950683104384, 'southwest': 0.9304102861689068}
+2025-08-25 22:50:37 - src.data.cleaner - INFO - Handled outliers in charges and BMI
+2025-08-25 22:50:37 - src.data.cleaner - INFO - Data cleaned. Original size: 1338, Cleaned size: 1338
+2025-08-25 22:50:37 - src.data.preprocessor - INFO - Preprocessor created successfully
+2025-08-25 22:50:37 - src.models.trainer - INFO - Starting model training and evaluation...
+2025-08-25 22:50:37 - src.models.trainer - INFO - Generated 8 feature names
+2025-08-25 22:50:37 - src.models.trainer - INFO - Training RandomForest...
+2025-08-25 22:50:43 - src.models.trainer - INFO - SUCCESS RandomForest - Test R2: 0.7957
+2025-08-25 22:50:43 - src.models.trainer - INFO - Training XGBoost...
+2025-08-25 22:50:47 - src.models.trainer - INFO - SUCCESS XGBoost - Test R2: 0.7625
+2025-08-25 22:50:47 - src.models.trainer - INFO - Training LightGBM...
+2025-08-25 22:50:53 - src.models.trainer - INFO - SUCCESS LightGBM - Test R2: 0.7591
+2025-08-25 22:50:53 - src.models.trainer - INFO - Training CatBoost...
+2025-08-25 22:50:53 - src.models.trainer - ERROR - FAILED CatBoost: catboost/private/libs/options/bootstrap_options.cpp:16: Error: bayesian bootstrap doesn't support 'subsample' option
+2025-08-25 22:50:53 - src.models.trainer - INFO - Training DecisionTree...
+2025-08-25 22:50:53 - src.models.trainer - INFO - SUCCESS DecisionTree - Test R2: 0.7693
+2025-08-25 22:50:54 - src.models.trainer - INFO - WINNER Selected best model: RandomForest
+2025-08-25 22:50:54 - src.models.trainer - INFO - SCORE Best model R2 score: 0.7957
+2025-08-25 22:50:54 - src.models.trainer - INFO - Cleaned up CatBoost temporary files
+2025-08-25 22:50:54 - src.models.trainer - INFO - Model performance metrics saved
+2025-08-25 22:50:55 - src.models.trainer - INFO - Model comparison plot generated
+2025-08-25 22:50:55 - src.models.trainer - INFO - Reports generated in reports/
+2025-08-25 22:50:56 - src.models.trainer - INFO - Model saved to models/insurance_model.pkl
+2025-08-25 22:50:56 - src.models.trainer - INFO - WINNER Model type: RandomForest
+2025-08-25 22:50:56 - src.models.trainer - INFO - SCORE Model R2 score: 0.7957
+2025-08-25 22:51:43 - src.data.loader - INFO - Dataset loaded successfully with shape (1338, 7)
+2025-08-25 22:51:43 - src.data.loader - INFO - Regional charge factors calculated
+2025-08-25 22:51:43 - src.data.loader - INFO - Regional factors: {'northeast': 1.0102455105442796, 'northwest': 0.935733251426951, 'southeast': 1.1103950683104384, 'southwest': 0.9304102861689068}
+2025-08-25 22:51:43 - src.data.cleaner - INFO - Handled outliers in charges and BMI
+2025-08-25 22:51:43 - src.data.cleaner - INFO - Data cleaned. Original size: 1338, Cleaned size: 1338
+2025-08-25 22:51:43 - src.data.preprocessor - INFO - Preprocessor created successfully
+2025-08-25 22:51:43 - src.models.trainer - INFO - Starting model training and evaluation...
+2025-08-25 22:51:43 - src.models.trainer - INFO - Generated 8 feature names
+2025-08-25 22:51:43 - src.models.trainer - INFO - Training RandomForest...
+2025-08-25 22:51:48 - src.models.trainer - INFO - SUCCESS RandomForest - Test R2: 0.7957
+2025-08-25 22:51:48 - src.models.trainer - INFO - Training XGBoost...
+2025-08-25 22:51:49 - src.models.trainer - INFO - SUCCESS XGBoost - Test R2: 0.7625
+2025-08-25 22:51:49 - src.models.trainer - INFO - Training LightGBM...
+2025-08-25 22:51:55 - src.models.trainer - INFO - SUCCESS LightGBM - Test R2: 0.7591
+2025-08-25 22:51:55 - src.models.trainer - INFO - Training CatBoost...
+2025-08-25 22:51:55 - src.models.trainer - ERROR - FAILED CatBoost: catboost/private/libs/options/bootstrap_options.cpp:16: Error: bayesian bootstrap doesn't support 'subsample' option
+2025-08-25 22:51:55 - src.models.trainer - INFO - Training DecisionTree...
+2025-08-25 22:51:55 - src.models.trainer - INFO - SUCCESS DecisionTree - Test R2: 0.7693
+2025-08-25 22:51:55 - src.models.trainer - INFO - WINNER Selected best model: RandomForest
+2025-08-25 22:51:55 - src.models.trainer - INFO - SCORE Best model R2 score: 0.7957
+2025-08-25 22:51:55 - src.models.trainer - INFO - Cleaned up CatBoost temporary files
+2025-08-25 22:51:55 - src.models.trainer - INFO - Model performance metrics saved
+2025-08-25 22:51:57 - src.models.trainer - INFO - Model comparison plot generated
+2025-08-25 22:51:57 - src.models.trainer - INFO - Reports generated in reports/
+2025-08-25 22:51:57 - src.models.trainer - INFO - Model saved to models/insurance_model.pkl
+2025-08-25 22:51:57 - src.models.trainer - INFO - WINNER Model type: RandomForest
+2025-08-25 22:51:57 - src.models.trainer - INFO - SCORE Model R2 score: 0.7957
+2025-08-25 22:57:22 - src.data.loader - INFO - Dataset loaded successfully with shape (1338, 7)
+2025-08-25 22:57:22 - src.data.loader - INFO - Regional charge factors calculated
+2025-08-25 22:57:22 - src.data.loader - INFO - Regional factors: {'northeast': 1.0102455105442796, 'northwest': 0.935733251426951, 'southeast': 1.1103950683104384, 'southwest': 0.9304102861689068}
+2025-08-25 22:57:22 - src.data.cleaner - INFO - Handled outliers in charges and BMI
+2025-08-25 22:57:22 - src.data.cleaner - INFO - Data cleaned. Original size: 1338, Cleaned size: 1338
+2025-08-25 22:57:22 - src.data.preprocessor - INFO - Preprocessor created successfully
+2025-08-25 22:57:22 - src.models.trainer - INFO - Starting model training and evaluation...
+2025-08-25 22:57:22 - src.models.trainer - INFO - Stored 8 feature names
+2025-08-25 22:57:22 - src.models.trainer - INFO - Training RandomForest...
+2025-08-25 22:57:27 - src.models.trainer - INFO - RandomForest OK - R2: 0.7957
+2025-08-25 22:57:27 - src.models.trainer - INFO - Training XGBoost...
+2025-08-25 22:57:28 - src.models.trainer - INFO - XGBoost OK - R2: 0.7625
+2025-08-25 22:57:28 - src.models.trainer - INFO - Training LightGBM...
+2025-08-25 22:57:34 - src.models.trainer - INFO - LightGBM OK - R2: 0.7578
+2025-08-25 22:57:34 - src.models.trainer - INFO - Training CatBoost...
+2025-08-25 22:57:34 - src.models.trainer - ERROR - CatBoost FAILED: catboost/private/libs/options/catboost_options.cpp:998: max_leaves option works only with lossguide tree growing
+2025-08-25 22:57:34 - src.models.trainer - INFO - Training DecisionTree...
+2025-08-25 22:57:35 - src.models.trainer - INFO - DecisionTree OK - R2: 0.7693
+2025-08-25 22:57:35 - src.models.trainer - INFO - Selected best model: RandomForest
+2025-08-25 22:57:35 - src.models.trainer - INFO - Best model R2: 0.7957
+2025-08-25 22:57:35 - src.models.trainer - INFO - Cleaned CatBoost temp files
+2025-08-25 22:57:35 - src.models.trainer - INFO - Saved model_performance.csv
+2025-08-25 22:57:37 - src.models.trainer - INFO - Saved model_comparison.png
+2025-08-25 22:57:37 - src.models.trainer - INFO - Model saved to models/insurance_model.pkl
+2025-08-25 23:01:14 - src.data.loader - INFO - Dataset loaded successfully with shape (1338, 7)
+2025-08-25 23:01:14 - src.data.loader - INFO - Regional charge factors calculated
+2025-08-25 23:01:14 - src.data.loader - INFO - Regional factors: {'northeast': 1.0102455105442796, 'northwest': 0.935733251426951, 'southeast': 1.1103950683104384, 'southwest': 0.9304102861689068}
+2025-08-25 23:01:14 - src.data.cleaner - INFO - Handled outliers in charges and BMI
+2025-08-25 23:01:14 - src.data.cleaner - INFO - Data cleaned. Original size: 1338, Cleaned size: 1338
+2025-08-25 23:01:14 - src.data.preprocessor - INFO - Preprocessor created successfully
+2025-08-25 23:01:14 - src.models.trainer - INFO - Starting model training and evaluation...
+2025-08-25 23:01:14 - src.models.trainer - INFO - Training XGBoost...
+2025-08-25 23:01:14 - src.models.trainer - ERROR - XGBoost FAILED: FeatureEngineer not fitted
+2025-08-25 23:01:14 - src.models.trainer - INFO - Training CatBoost...
+2025-08-25 23:01:14 - src.models.trainer - ERROR - CatBoost FAILED: FeatureEngineer not fitted
+2025-08-25 23:01:14 - src.models.trainer - INFO - Training RandomForest...
+2025-08-25 23:01:14 - src.models.trainer - ERROR - RandomForest FAILED: FeatureEngineer not fitted
+2025-08-25 23:01:14 - src.models.trainer - INFO - Training LightGBM...
+2025-08-25 23:01:14 - src.models.trainer - ERROR - LightGBM FAILED: FeatureEngineer not fitted
+2025-08-25 23:01:14 - src.models.trainer - ERROR - Error training models: FeatureEngineer not fitted
+2025-08-25 23:01:14 - src.models.trainer - INFO - Cleaned CatBoost temp files
+2025-08-25 23:04:30 - src.data.loader - INFO - Dataset loaded successfully with shape (1338, 7)
+2025-08-25 23:04:30 - src.data.loader - INFO - Regional charge factors calculated
+2025-08-25 23:04:30 - src.data.loader - INFO - Regional factors: {'northeast': 1.0102455105442796, 'northwest': 0.935733251426951, 'southeast': 1.1103950683104384, 'southwest': 0.9304102861689068}
+2025-08-25 23:04:30 - src.data.cleaner - INFO - Handled outliers in charges and BMI
+2025-08-25 23:04:30 - src.data.cleaner - INFO - Data cleaned. Original size: 1338, Cleaned size: 1338
+2025-08-25 23:04:30 - src.data.preprocessor - INFO - Preprocessor created successfully
+2025-08-25 23:04:30 - src.models.trainer - INFO - Starting model training and evaluation...
+2025-08-25 23:04:30 - src.models.trainer - INFO - Training CatBoost...
+2025-08-25 23:05:03 - src.models.trainer - INFO - CatBoost OK - R2: 0.7846
+2025-08-25 23:05:03 - src.models.trainer - INFO - Training XGBoost...
+2025-08-25 23:05:06 - src.models.trainer - INFO - XGBoost OK - R2: 0.7734
+2025-08-25 23:05:06 - src.models.trainer - INFO - Training LightGBM...
+2025-08-25 23:05:15 - src.models.trainer - INFO - LightGBM OK - R2: 0.7571
+2025-08-25 23:05:15 - src.models.trainer - INFO - Training RandomForest...
+2025-08-25 23:05:25 - src.models.trainer - INFO - RandomForest OK - R2: 0.8128
+2025-08-25 23:05:27 - src.models.trainer - INFO - Selected best model: RandomForest
+2025-08-25 23:05:27 - src.models.trainer - INFO - Best model R2 score: 0.8128
+2025-08-25 23:05:27 - src.models.trainer - INFO - Cleaned up CatBoost temporary files
+2025-08-25 23:05:27 - src.models.trainer - INFO - Model performance metrics saved
+2025-08-25 23:05:30 - src.models.trainer - INFO - Model comparison plot generated
+2025-08-25 23:05:30 - src.models.trainer - INFO - Model saved to models/insurance_model.pkl
+2025-08-25 23:06:00 - src.models.predictor - INFO - RandomForest model loaded successfully
+2025-08-25 23:06:16 - src.models.predictor - INFO - RandomForest model loaded successfully
+2025-08-25 23:06:19 - src.models.predictor - INFO - RandomForest model loaded successfully
+2025-08-25 23:06:23 - src.models.predictor - INFO - RandomForest model loaded successfully
+2025-08-25 23:06:25 - src.models.predictor - INFO - RandomForest model loaded successfully
+2025-08-25 23:06:28 - src.models.predictor - INFO - RandomForest model loaded successfully
+2025-08-25 23:06:29 - src.models.predictor - INFO - RandomForest model loaded successfully
+2025-08-25 23:06:30 - src.models.predictor - INFO - Prediction made: $34326.90 for input: {'age': 49, 'sex': 'male', 'bmi': 35.8, 'children': 0, 'smoker': 'yes', 'region': 'southeast'}
